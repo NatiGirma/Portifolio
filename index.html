@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natnael Girma- front-end Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+    src="https://kit.fontawesome.com/f972d4c1a3.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>Natnael</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <!-- times icon -->
+            <i class=" fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <!-- menu icon -->
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm
+            <span class="name">Natnael </span>
+          </h1>
+          <p>I'm Front-end Web Developer</p>
+        </div>
+      </div>
+    </div>
+    <!--------------about-------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/anony.jpg" alt="person with anonymous mask" />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+             My name is Natnael Girma. I am front-end developer based in Etiopia.
+             I love to create beautiful and interactive websites. 
+             At the moment I'm student in Adama Science and Technology University.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br />Building Android apps</li>
+                <li><span>Web Design</span><br />Designing web interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021 - current </span><br />Adama Science and Technology
+                  University
+                </li>
+                <li>
+                  <span>2021</span><br>ALX africa
+                </li>
+                <li>
+                  <span>2022</span><br />Code with Mosh Accademy
+                </li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021</span><br />Web Development internship at
+                  Marakitech
+                </li>
+                <li>
+                  <span>2023</span><br>Front-end developement in Code with Mosh acccademy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----portfolio--->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/moshified4.png" >
+                        <div class="layer">
+                            <h2>Moshified</h2>
+                            <p>Cloud hosting website for professional developers.</p>
+                            <a href="https://www.moshified.com/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">              
+                    </div>
+                    <div class="work">                     
+                    </div>
+                </div>
+               
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p> <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              natigirma.code@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +251979641598</p>
+            <div class="social-icons">
+
+              <!-- telegram instagram linkedin and facebook icons -->
+              <a href="https://www.instagram.com/natigirma_official/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="www.linkedin.com/in/natnaelgirma"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+
+              <!-- <a href=" "></a> -->
+            </div>
+          </div>
+          <div class="contact-right">
+            <form  class="form">
+              <input class="info" type="text" name="Name" placeholder="Your Name" required>
+              <input class="info" type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+            
+              <input type="submit" value="submit" class="btn btn2" >
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy;  Natnael Girma.</p>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
